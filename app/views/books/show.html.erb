@@ -1,0 +1,13 @@
+<% if true %>
+<p>Book was successfully created.</p>
+<% end %>
+
+<h2>Title</h2>
+<p><%= @book.title %></p>
+
+<h2>body</h2>
+<p><%= @book.body %></p>
+<a>
+<%= link_to "編集", edit_book_path(@book.id) %>
+</a>
+<a href=/books >back</a>
